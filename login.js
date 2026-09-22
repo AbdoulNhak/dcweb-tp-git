@@ -1,9 +1,9 @@
-function login(username, password) {
-  console.log("Tentative de connexion pour " + username);
-  if (!username || !password) {
+function login(identifiant, password) {
+  console.log("Tentative de connexion pour " + identifiant);
+  if (!identifiant || !password) {
     return { succes: false, message: "Identifiants manquants" };
   }
-  return { succes: true, utilisateur: username };
+  return { succes: true, utilisateur : identifiant };
 }
  
 module.exports = { login };
