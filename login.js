@@ -1,5 +1,5 @@
 function login(identifiant, password) {
-  console.log("Tentative de connexion pour " + identifiant);
+  console.log("Tentative de connexion pour : " + identifiant);
   if (!identifiant || !password) {
     return { succes: false, message: "Identifiants manquants" };
   }
